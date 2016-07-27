@@ -1,0 +1,46 @@
+#client{
+	background-color:$mainColor;
+	padding-top:100px;
+	i{
+		display: inline-block;
+		float:left;
+	}
+	p{
+		margin:50px 20px 35px 0;
+		--font-style: italic;
+		font-size: 15px;
+	}
+
+	.col-md-5{
+		padding-top: 50px;
+	img{
+		width: 132px;
+		height:132px;
+		border-radius: 66px;
+		float: left;
+		
+		&:nth-child(2){
+			margin-right:30px;
+			margin-left:30px;
+		}
+		&:nth-child(5){
+			margin-right:30px;
+			margin-left:30px;
+		}
+	}
+	.slide{
+		position: relative;
+		bottom:132px;
+		.carousel-indicators{
+			bottom:-50px;
+			li {
+				border:0;
+				background-color:#b3cacf;
+			}
+			.active{
+				background-color:$blueColor;
+			}
+		}
+	}
+	}
+}

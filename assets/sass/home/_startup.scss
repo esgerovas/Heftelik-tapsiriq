@@ -1,0 +1,38 @@
+#start_up{
+   font-size: 16px;
+   letter-spacing: -0.5px;
+   padding-top:100px;
+	.col-md-7{
+		margin-top: -3px;
+		p{
+			margin:35px 0 55px 0;
+		}
+	}
+	.img_1 {
+		width: 585px;
+		height: 301px;
+	}
+	.icon-div {
+		width:67px;
+		height: 67px;
+		text-align:center;
+		line-height: 65px;
+		background-color: $mainColor;
+
+	}
+	.col-md-10{
+		padding-left:30px;
+		margin-top:-3px;
+	}
+	
+	h3{
+		font-size:20px;
+		margin-top:0;
+	}
+	
+	.button1{
+			@include button($blueColor,165px);
+			margin-left: 97px;
+	}
+	
+}

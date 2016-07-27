@@ -1,0 +1,51 @@
+#slider{
+	height:750px;
+	letter-spacing:2px;
+	img{
+		height:750px;
+		width: 100%;
+	}
+	.carousel-caption{
+		bottom:298px;
+		left:5%;
+		right:5%;
+		h1{
+			font-size:48px;
+			font-weight: 900;
+		}
+	}
+	.carousel-indicators{
+		bottom:29px;
+		li{
+			width: 15px;
+			height:15px;
+			border-radius:15px;
+			border-width:3px;
+			margin:2px;
+		}
+		//triangle icon
+		.active:after{
+			content:"";
+			display: block;
+			border-top:8px solid white;
+			border-bottom:0 solid transparent;
+			border-left:5px solid transparent;
+			border-right:5px solid transparent;
+			position: relative;
+			bottom:93px;
+		}
+		// pop-up pictures
+		 .active:first-child:before{
+		    background:url(../images/slider1.jpg);
+		    @include slider();
+		}
+		 .active:nth-child(2):before{
+		    background:url(../images/slider2.jpg);
+		    @include slider();
+		}
+		 .active:last-child:before{
+		    background:url(../images/slider3.jpg);
+		    @include slider();
+		}
+	}
+}

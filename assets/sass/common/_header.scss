@@ -1,0 +1,74 @@
+#header{
+	color:$textColor;
+	letter-spacing: 1px;
+	.header1{
+		background-color: $mainColor;
+		height: 50px;
+		font-size:13px;
+
+			span{
+				line-height: 50px;
+				display: inline-block;
+				&:last-child{
+					padding-right:29px;
+					border-right:1px solid #d8e3e6;
+					font-size:14px;
+					float:right;
+					i {
+						font-size:25px;
+						position: relative;
+						top:3px;
+					}
+				}
+				&:nth-child(2){
+					padding-left:27px;	
+					float:right;
+					 i {
+						font-size:20px;
+						position: relative;
+						top:1px;
+					}
+				}
+		    }
+		}
+		
+	.header2{
+		height: 76px;
+		line-space:0.6px;
+		.navbar-default{
+			background-color:transparent !important;
+		}
+		.navbar-brand{
+			height:75px;
+			padding:20px 15px 20px 15px;	
+			
+		}
+		li{
+			display: inline-block;
+			a{
+			color: $textColor;
+			line-height: 76px;
+			padding:0 20px;
+			margin:0;
+			&:hover{
+				background-color:transparent;
+				color:black;
+			}
+			&:focus{
+				background-color:transparent;
+			}
+			}
+			.active{
+				color:black;
+			}
+			i{
+				font-size:8.5px;
+			}
+			.button1{
+			@include button($blueColor,141px);
+			position:relative;
+			top:19px;
+			}
+		}
+	}
+}

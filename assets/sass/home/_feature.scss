@@ -1,0 +1,47 @@
+#feature{
+	padding-top:100px;
+
+	position:relative;
+	.row{
+		margin-bottom:50px;
+		position:relative;
+		&:last-child{
+			height: 150px;
+		}
+	}
+	.icon-div {
+		width:67px;
+		height: 67px;
+		text-align:center;
+		line-height: 65px;
+		background-color: $mainColor;
+	}
+	h3{
+		font-size:20px;
+		margin-top:0;
+	}
+
+	.button1{
+			@include button($blueColor,165px);
+			margin:20px auto;
+	}
+	.triangle-blue {
+			border-top:0 solid transparent;
+			border-right:55px solid transparent;
+			border-bottom:80px solid $blueColor;
+			border-left:55px solid transparent;
+			position: absolute;
+			right: 110px;
+			bottom: 0;
+			z-index: 1;
+		}
+		.triangle-orange {
+			border-top:0 solid transparent;
+			border-right:70px solid transparent;
+			border-bottom:110px solid $orangeColor;
+			border-left:70px solid transparent;
+			position: absolute;
+			bottom: 0;
+			right: 15px;
+		}
+}
