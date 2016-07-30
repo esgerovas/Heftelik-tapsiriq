@@ -1,47 +1,68 @@
 #feature{
 	padding-top:100px;
-
 	position:relative;
 	.row{
-		margin-bottom:50px;
-		position:relative;
-		&:last-child{
-			height: 150px;
-		}
+		margin-bottom:47px;
 	}
-	.icon-div {
+	.row:first-child{
+		margin-bottom: 55px;
+	}
+	p{
+	   	font-family: $font-three;
+	   	font-weight:400;
+	   	color:$textColor2;
+	   	font-size: 14.5px;
+    }
+	.icon {
 		width:67px;
 		height: 67px;
 		text-align:center;
 		line-height: 65px;
 		background-color: $mainColor;
+		float:left;
 	}
-	h3{
-		font-size:20px;
-		margin-top:0;
+	.icon:hover, .active {
+		background-color:$orangeColor;
+	}
+	.info{
+		margin-top:-2px;
+		float:left;
+		padding-left:30px;
+		position: relative;
+		width: calc(100% - 67px);
+		h3{
+			font-size:20px;
+			margin-top:0;
+			letter-spacing: 1px;
+			font-size: 500;
+		}
 	}
 
 	.button1{
 			@include button($blueColor,165px);
-			margin:20px auto;
+			margin-bottom: 98px;
 	}
-	.triangle-blue {
+	.triangle{
+		border-bottom:1px solid lighten($textColor,20%);
+
+	    .triangle-blue {
 			border-top:0 solid transparent;
-			border-right:55px solid transparent;
+			border-right:50px solid transparent;
 			border-bottom:80px solid $blueColor;
 			border-left:55px solid transparent;
 			position: absolute;
-			right: 110px;
+			right: 125px;
 			bottom: 0;
 			z-index: 1;
 		}
 		.triangle-orange {
 			border-top:0 solid transparent;
-			border-right:70px solid transparent;
-			border-bottom:110px solid $orangeColor;
-			border-left:70px solid transparent;
+			border-right:68px solid transparent;
+			border-bottom:108px solid $orangeColor;
+			border-left:68px solid transparent;
 			position: absolute;
 			bottom: 0;
-			right: 15px;
+			right: 17px;
 		}
+	}
 }

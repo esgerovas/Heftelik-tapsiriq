@@ -1,11 +1,12 @@
 #header{
+	font-family:$font-one;
+	font-size:14px;
 	color:$textColor;
 	letter-spacing: 1px;
 	.header1{
 		background-color: $mainColor;
 		height: 50px;
 		font-size:13px;
-
 			span{
 				line-height: 50px;
 				display: inline-block;
@@ -34,20 +35,27 @@
 		
 	.header2{
 		height: 76px;
-		line-space:0.6px;
-		.navbar-default{
-			background-color:transparent !important;
-		}
+		line-space:0.6px;	
 		.navbar-brand{
 			height:75px;
 			padding:20px 15px 20px 15px;	
-			
+		}
+		#myNavbar{
+			z-index:999;
+			background-color:white !important;
+		}
+		.navbar-toggle{
+			margin-top: 20px;
+			background-color:#eee;
+		}
+		.icon-bar{
+			background-color:#333 !important;
+		
 		}
 		li{
-			display: inline-block;
 			a{
 			color: $textColor;
-			line-height: 76px;
+			line-height: 75px;
 			padding:0 20px;
 			margin:0;
 			&:hover{

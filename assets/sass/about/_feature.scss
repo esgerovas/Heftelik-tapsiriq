@@ -1,0 +1,57 @@
+#feature{
+	padding-top:100px;
+	position:relative;
+	.content > div{
+		margin-bottom:47px;
+	}
+	.row:first-child{
+		margin-bottom: 55px;
+	}
+	.row:last-child{
+		margin-top: 10px;
+		position:relative;
+		.line{
+			position:absolute;
+			bottom:0;
+			border-bottom:1px solid $mainColor;
+			width: 100%;
+		}
+	}
+	p{
+	   	font-family: $font-three;
+	   	font-weight:400;
+	   	color:$textColor2;
+	   	font-size: 14.5px;
+    }
+	.icon  {
+		width:67px;
+		height: 67px;
+		text-align:center;
+		background-color: white;
+		float:left;
+		
+	}
+
+	.icon:hover{
+		background-color:$orangeColor;
+	}
+	.info{
+		margin-top:-2px;
+		float:left;
+		padding-left:30px;
+		position: relative;
+		width: calc(100% - 67px);
+		h3{
+			font-size:20px;
+			margin-top:0;
+			letter-spacing: 1px;
+			font-size: 500;
+		}
+	}
+
+	.button1{
+			@include button($blueColor,165px);
+			margin-bottom: 98px;
+	}
+	
+}

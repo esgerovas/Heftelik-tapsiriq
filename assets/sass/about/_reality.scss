@@ -1,0 +1,55 @@
+#reality{
+	font-family:$font-one;
+	padding-top:100px;
+	.col-md-6 p{
+			margin-top:32px;
+		}
+	.col-md-6:nth-child(2) p{
+				padding-left:15px;
+			}
+	p{
+		font-family: $font-three;
+		color:$textColor2;
+		font-weight: 500;
+		font-size:14.5px;
+		letter-spacing: 0.5px;
+	}
+
+	.line{
+		border-bottom:1px solid $mainColor;
+		margin:60px 0 60px 0;
+	}
+
+	.icon {
+		width:67px;
+		height: 67px;
+		text-align:center;
+		line-height: 65px;
+		background-color: white;
+		float:left;
+	}
+	.icon:hover{
+		background-color:$mainColor;
+	}
+	.star > div{
+		margin-bottom:68px;
+	}
+	.info{
+		margin-top:-2px;
+		float:left;
+		padding-left:30px;
+		position: relative;
+		width: calc(100% - 67px);
+		h3{
+			font-size:60px;
+			margin-top:0;
+			margin-bottom:0;
+			letter-spacing: 1px;
+			font-width: 800;
+		}
+		span{
+			text-transform: uppercase;
+			display:block;
+		}
+	}
+}

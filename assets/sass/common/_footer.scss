@@ -1,0 +1,110 @@
+#footer{
+	position:relative;
+	.line{
+		width:100%;
+		margin:0 auto;
+		border-bottom:1px solid lighten($textColor,20%);
+	}
+	.first-row{
+		padding-top:76px;
+		padding-bottom:100px;
+		h2{
+			font-family: $font-two;
+			font-weight:500;
+			font-size:32px;
+			margin-bottom: 0;
+			span{
+				color:$orangeColor;
+			}
+		}
+		h2+span{
+			text-transform: uppercase;
+			color:#59686c;
+			font-family: $font-two;
+			font-weight: 400px;
+			line-height: 14px;
+			
+		}
+		.button1 {
+			@include button($blueColor,141px);
+			margin-right:8px;
+		}
+		.button1:last-child {
+			@include button($orangeColor,141px);
+			margin-left:8px;
+		}
+	}
+	.second-row{
+		padding-top:70px;
+		padding-bottom:65px;
+		line-height: 34px;
+		font-family: $font-one;
+		text-transform: uppercase;
+		position:relative;
+		h5{
+			font-family: $font-two;
+			font-size: 18px;
+			text-transform: none;
+			margin-bottom: 15px;
+			margin-top:0;
+		}
+		a,li,input,button,p{
+			color:$textColor;
+			letter-spacing: 1px;
+		}
+		a:hover{
+			color:black;
+			text-decoration: none;
+		}
+		span{
+			color:black;
+		}
+		input{
+			width:98%;
+			height:42px;
+			padding-left:15px;
+		}
+		button{
+			background-color: $blueColor;
+			color:white;
+			height:42px;
+			width:42px;
+			text-align: center;
+			border-radius:0;
+			margin-top: -1px;
+			margin-left:-42px;
+		}
+	}
+	.third-row{
+		padding-top:10px;
+		padding-bottom:62px;
+		position:relative;
+		span{
+			color:$textColor;
+			letter-spacing: 1px;
+			line-height: 34px;
+			font-family: $font-one;
+			text-transform: uppercase;
+		}
+	}
+	.triangle-blue {
+			border-top:0 solid transparent;
+			border-right:0 solid transparent;
+			border-bottom:130px solid $blueColor;
+			border-left:190px solid transparent;
+			position: absolute;
+			right:0;
+			bottom: 0;
+			
+		}
+		.triangle-orange {
+			border-top:0 solid transparent;
+			border-right:140px solid transparent;
+			border-bottom:100px solid $orangeColor;
+			border-left: solid transparent;
+			position: absolute;
+			bottom:106px;
+			left:0;
+		}
+
+}

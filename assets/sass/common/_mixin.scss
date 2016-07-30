@@ -1,3 +1,45 @@
+body{
+	line-height:24px;
+	font-size:14px;
+}
+.title{
+		font-size: 30px;
+		font-family:$font-two;
+		font-weight: 900;
+		text-transform: uppercase;
+		line-height: 24px;	
+		margin-top: 0;
+		margin-bottom:3px;
+	}
+
+.subtitle{
+		font-size: 18px;
+		font-family:$font-one;
+		text-transform: uppercase;
+}
+
+@mixin blog(){
+	height:310px;
+	padding-top:125px;
+	font-family:$font-two;
+	text-align:center;
+	text-transform:uppercase;
+	color:white;
+	h1{
+		font-size:48px;
+		font-weight:800;
+		margin:0;
+		line-height: 30px;
+	}
+	h6{
+		font-size:14px;
+		font-weight:500;
+		line-height: 30px;
+		letter-spacing: 1px;
+	}
+
+}
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
@@ -16,24 +58,31 @@
 	display: inline-block;
 	border:0;
 	outline: none;
+	transition:all 0.5s ease;
+	letter-spacing:1px;
 	@include border-radius(19px);
 	&:focus {
 		outline: none;
 	}
+	&:hover{
+		margin-top:-1px;
+		box-shadow: 1px 1px 3px $blueColor;
+		background-color:darken($blueColor, 20%);
+		color:gray;
 
-
+	}
 }
 
 @mixin slider(){
 	content:"";
-		width: 73px;
-		height:73px;
-		border:3px solid white;
-		display: block;
-		@include border-radius(50%);
-		bottom:92px;
-		position:relative;
-		left:-30px;
-		background-size:cover;
+	width: 73px;
+	height:73px;
+	border:3px solid white;
+	display: block;
+	@include border-radius(50%);
+	bottom:92px;
+	position:relative;
+	left:-30px;
+	background-size:cover;
 
 }

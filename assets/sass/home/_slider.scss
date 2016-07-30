@@ -1,17 +1,21 @@
 #slider{
 	height:750px;
-	letter-spacing:2px;
+	font-family:$font-two;
+	font-size:14px;
 	img{
 		height:750px;
 		width: 100%;
 	}
 	.carousel-caption{
-		bottom:298px;
+		bottom:297px;
 		left:5%;
 		right:5%;
 		h1{
 			font-size:48px;
-			font-weight: 900;
+			font-weight: 800;
+		}
+		p{
+			letter-spacing: 1px;
 		}
 	}
 	.carousel-indicators{

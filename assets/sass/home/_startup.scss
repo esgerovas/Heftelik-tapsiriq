@@ -1,38 +1,55 @@
 #start_up{
-   font-size: 16px;
-   letter-spacing: -0.5px;
    padding-top:100px;
+   	p{
+	   	font-family: $font-three;
+	   	font-weight:400;
+	   	color:$textColor2;
+	   	font-size: 14.5px;
+    }
 	.col-md-7{
-		margin-top: -3px;
 		p{
-			margin:35px 0 55px 0;
+			margin:28px 0 55px 0;
 		}
-	}
-	.img_1 {
-		width: 585px;
-		height: 301px;
-	}
-	.icon-div {
-		width:67px;
-		height: 67px;
-		text-align:center;
-		line-height: 65px;
-		background-color: $mainColor;
-
-	}
-	.col-md-10{
-		padding-left:30px;
-		margin-top:-3px;
-	}
 	
-	h3{
-		font-size:20px;
-		margin-top:0;
-	}
-	
-	.button1{
-			@include button($blueColor,165px);
-			margin-left: 97px;
-	}
-	
+		.img_1 {
+			width: 585px;
+			height: 301px;
+		}
+	}// col-md-7
+	.col-md-5{
+		.clearFix{
+			clear: both;
+			margin-bottom:33px;
+		}
+		.icon {
+			width:67px;
+			height: 67px;
+			text-align:center;
+			line-height: 65px;
+			background-color: $mainColor;
+			float:left;
+		}
+		.icon:hover, .active {
+			background-color:$orangeColor;
+		}
+		.info{
+			margin-top:-2px;
+			float:left;
+			padding-left:30px;
+			position: relative;
+			width: calc(100% - 67px);
+		}
+		h3{
+			font-size:20px;
+			margin-top:0;
+			font-family:$font-two;
+			font-size: 500;
+			letter-spacing: 1px;
+		}
+		.button1{
+				clear:both;
+				@include button($blueColor,165px);
+				margin-left: 100px;
+		}
+	}//col-md-5
 }
