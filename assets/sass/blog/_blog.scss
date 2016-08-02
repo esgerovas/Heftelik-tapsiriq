@@ -1,0 +1,6 @@
+#blog{
+	
+	background:url('../images/slider3.jpg') no-repeat center center;
+	background-size:cover;
+	@include blog();
+}

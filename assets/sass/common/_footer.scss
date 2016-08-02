@@ -34,13 +34,17 @@
 			margin-left:8px;
 		}
 	}
-	.second-row{
-		padding-top:70px;
+    .second-row > div{
+        padding-top:70px;
 		padding-bottom:65px;
+    }
+	.second-row{
+		
 		line-height: 34px;
 		font-family: $font-one;
 		text-transform: uppercase;
 		position:relative;
+        
 		h5{
 			font-family: $font-two;
 			font-size: 18px;
@@ -108,3 +112,4 @@
 		}
 
 }
+

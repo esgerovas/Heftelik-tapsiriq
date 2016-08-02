@@ -1,0 +1,60 @@
+#service{
+	padding-top:100px;
+	padding-bottom:50px;
+	font-family:$font-one;
+	.row{
+		margin-bottom:47px;
+	}
+	.media-left{
+		padding-right:78px;
+		padding-top:10px;
+	}
+	h4{
+		font-size:22px;
+		font-weight: 700;
+	}
+	.line{
+		border-bottom:1px solid lighten(gray, 35%);
+		margin-bottom:60px;
+	}
+	blockquote{
+		border-color:$blueColor;
+		padding-top:0;
+		padding-bottom:0;
+		border-width:4px;
+	}
+	p{
+		margin-bottom: 40px;
+	}
+
+	.button1{
+			@include button($blueColor,141px);
+			margin-bottom: 55px;
+	}
+	.active{
+		.button1{
+			@include button($orangeColor,141px);
+			}
+			blockquote{
+				border-color:$orangeColor;
+			}
+
+	}
+	
+}
+@media only screen and (max-width: 550px) {
+    #service {
+    	.media{
+    		text-align: center;
+    	}
+    	.media-left{
+    		display:inline-block;
+    		clear:both;
+    		padding:0 0 20px 0;
+    	
+    	}
+    	.media-body{
+    		text-align: left;
+    	}
+    }
+}

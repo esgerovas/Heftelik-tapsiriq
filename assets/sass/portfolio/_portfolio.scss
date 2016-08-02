@@ -1,0 +1,80 @@
+#portfolio{
+	padding-top:100px;
+	.row{
+		margin-bottom:50px;
+	}
+	.col-md-3{
+		div{
+			width: 100%;
+			margin-bottom:30px;
+			box-sizing: border-box;
+			padding-top:40px;
+			h5,a{
+				display:none;
+			}
+			transition:all 0.5s ease;
+			&:hover{
+				border:7px solid gray;			
+				background-image:none;
+				cursor: pointer;
+				font-size:15px;
+				text-transform:uppercase;
+				h5,a{
+					display:block;
+					color:gray;
+				}
+			}
+		}
+		.img0{
+			height:261px;
+			background-image: url("../images/portfolio1.jpg");
+			background-size:cover;
+		}
+		.img1{
+			height:393px;
+			background-image: url("../images/portfolio4.jpg");
+			background-size:cover;
+		}
+		.img2{
+			height:193px;
+			background-image: url("../images/news.jpg");
+			background-size:cover;
+		}
+		.img3{
+			height:327px;
+			background-image: url("../images/portfolio2.jpg");
+			background-size:cover;
+		}
+		.img4{
+			height:150px;
+			background-image: url("../images/portfolio3.jpg");
+			background-size:cover;
+		}
+		.img5{
+			height:170px;
+			background-image: url("../images/news1.jpg");
+			background-size:cover;
+		}
+		.img6{
+			height:367px;
+			background-image: url("../images/portfolio2.jpg");
+			background-size:cover;
+		}
+		.img7{
+			height:211px;
+			background-image: url("../images/portfolio5.jpg");
+			background-size:cover;
+		}
+		}
+	
+}
+@media only screen and (max-width:970px) and (min-width:850px){
+	#portfolio{
+		.info{
+			clear:left;
+		}
+		.col-sm-6:last-child{
+			margin-top: -110px;
+		}
+	}
+}

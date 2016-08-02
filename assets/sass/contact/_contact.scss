@@ -1,0 +1,28 @@
+#contact{
+	.row{
+		margin-bottom: 40px;
+	}
+	input{
+		margin-bottom: 20px;
+		width: 100%;
+		background-color:#e3eef0;
+		border:0;
+		height:45px;
+		padding-left:10px;		
+	}
+
+	textarea{
+		width: 100%;
+		background-color:#e3eef0;
+		margin-bottom: 20px;
+		padding-left:10px;
+		border:0;
+	}
+	.button1{
+		@include button($blueColor,141px);
+	}
+	.line{
+		border-bottom:1px solid lighten( gray,35%);
+		margin:100px 0 10px 0;
+	}
+}

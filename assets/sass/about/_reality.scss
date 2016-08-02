@@ -3,10 +3,9 @@
 	padding-top:100px;
 	.col-md-6 p{
 			margin-top:32px;
+			padding-right:15px;
 		}
-	.col-md-6:nth-child(2) p{
-				padding-left:15px;
-			}
+	
 	p{
 		font-family: $font-three;
 		color:$textColor2;

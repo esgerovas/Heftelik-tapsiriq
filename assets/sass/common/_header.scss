@@ -3,6 +3,7 @@
 	font-size:14px;
 	color:$textColor;
 	letter-spacing: 1px;
+    overflow:hidden;
 	.header1{
 		background-color: $mainColor;
 		height: 50px;
@@ -34,30 +35,31 @@
 		}
 		
 	.header2{
-		height: 76px;
-		line-space:0.6px;	
-		.navbar-brand{
-			height:75px;
-			padding:20px 15px 20px 15px;	
+        .navbar{
+            margin-bottom: 0px;
+        }
+        .navbar-toggle{
+			margin-top: 10px;
+			background-color:#eee;
+            .icon-bar{
+			background-color:#333 !important;
+		    }
 		}
-		#myNavbar{
-			z-index:999;
+		.navbar-brand{
+			padding:10px 15px 10px 15px;
+            height:60px;
+		}
+		#navbar{
 			background-color:white !important;
 		}
-		.navbar-toggle{
-			margin-top: 20px;
-			background-color:#eee;
-		}
-		.icon-bar{
-			background-color:#333 !important;
-		
-		}
-		li{
-			a{
+	   .navbar-right > li{
+            overflow: hidden;
+        } 
+        li{
+    	   a{
 			color: $textColor;
-			line-height: 75px;
+            line-height: 65px;
 			padding:0 20px;
-			margin:0;
 			&:hover{
 				background-color:transparent;
 				color:black;
@@ -75,8 +77,17 @@
 			.button1{
 			@include button($blueColor,141px);
 			position:relative;
-			top:19px;
+			top:10px;
+            margin-bottom: 30px;
 			}
-		}
+        }
 	}
+}
+@media only screen and (max-width: 650px) {
+    #header .header1 span:last-child {
+        display: none;
+    }
+    #header .header1 span:nth-child(2) {
+        display: none;
+    }
 }
